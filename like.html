@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Like me
+    </title>
+</head>
+<body>
+    
+    <button onclick="col()"> click me</button>
+    <script>
+         const colors = ["#f0e68c", "#add8e6", "#ffcccb", "#d3ffce", "#e6e6fa"];
+        let index = 0;
+        function col()
+        {
+          //  var b = document.getElementsByTagName("body");
+            document.body.style.backgroundColor = colors[index];
+            index = index + 1;      
+            if(index == colors.length)
+            {
+                index = 0;
+            }
+        }
+    </script>
+</body>
+</html>
